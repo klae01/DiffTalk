@@ -76,7 +76,7 @@ def extract_features(in_audios,
     for i, in_audio in enumerate(in_audios):
         if not out_files[i]:
             file_stem, _ = os.path.splitext(in_audio)
-            out_files[i] = file_stem + ".ds.npy"
+            out_files[i] = file_stem + ".npy"
     conv_audios_to_deepspeech(
         audios=in_audios,
         out_files=out_files,

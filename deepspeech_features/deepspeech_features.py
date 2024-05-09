@@ -139,7 +139,7 @@ def pure_conv_audio_to_deepspeech(audio,
     network_output = net_fn(input_vector)
 
     deepspeech_fps = 50
-    video_fps = 60
+    video_fps = 25
     audio_len_s = float(audio.shape[0]) / audio_sample_rate
     if num_frames is None:
         num_frames = int(round(audio_len_s * video_fps))
