@@ -34,8 +34,8 @@ Please download the HDTF dataset for training and test, and process the dataset 
           |——...
           |——N_M.bin
        |——landmarks
-          |——0_0.lmd
-          |——0_1.lmd
+          |——0_0.lms
+          |——0_1.lms
           |——...
           |——N_M.lms
        |——audio_smooth
@@ -54,6 +54,12 @@ Please download the HDTF dataset for training and test, and process the dataset 
 
 
 N is the total number of classes, and M is the class size.
+
+<!-- new information start -->
+run preprocessing as following
+python3 scripts/preprocess.py /mnt/hard3/rhs/intern/ops/sample*.webm
+<!-- new information end -->
+
 
 
 ## Training
