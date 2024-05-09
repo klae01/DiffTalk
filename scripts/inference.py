@@ -33,7 +33,7 @@ def load_model_from_config(config, ckpt):
 
 def get_model():
     config = OmegaConf.load("configs/latent-diffusion/talking-inference.yaml")
-    model = load_model_from_config(config, "logs/xxx.ckpt")
+    model = load_model_from_config(config, "models/model.ckpt")
     return model
 
 
